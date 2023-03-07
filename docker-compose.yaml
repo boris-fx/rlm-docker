@@ -1,0 +1,12 @@
+services:
+  rlm:
+    image: borisfx-rlm
+    build:
+      tags:
+        - borisfx-rlm
+      x-bake:
+        platforms:
+          - linux/amd64
+    volumes:
+      - ./licenses:/licenses
+      - ./logs:/logs
