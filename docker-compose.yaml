@@ -1,5 +1,5 @@
 services:
-  rlm:
+  borisfx-rlm:
     image: borisfx-rlm
     build:
       tags:
@@ -10,3 +10,9 @@ services:
     volumes:
       - ./licenses:/licenses
       - ./logs:/logs
+    hostname: ${HOSTNAME}
+    mac_address: ${HOSTID}
+    ports:
+      - 5053:5053
+      - 5054:5054
+      - 5153:5153
