@@ -1,0 +1,7 @@
+licenses/
+logs/
+cert/
+*~
+.DS_Store
+.env
+
