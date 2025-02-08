@@ -1,6 +1,6 @@
 licenses/
 logs/
-cert/
+certs/
 *~
 .DS_Store
 .env

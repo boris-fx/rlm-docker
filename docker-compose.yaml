@@ -1,6 +1,7 @@
 services:
   borisfx-rlm:
     image: borisfx-rlm
+    platform: linux/amd64
     build:
       tags:
         - borisfx-rlm
@@ -10,6 +11,7 @@ services:
     volumes:
       - ./licenses:/licenses
       - ./logs:/logs
+      - ./certs:/certs
     hostname: ${HOSTNAME}
     mac_address: ${HOSTID}
     ports:
